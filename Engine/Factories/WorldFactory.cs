@@ -12,13 +12,14 @@ namespace Engine.Factories
                 "There are rows of corn growing here, with giant rats hiding between them.",
                 "FarmFields.png");
 
-            newWorld.LocationAt(-2, -1).AddMonster(2, 100);
+            newWorld.LocationAt(-2, -1).AddMonster(2, 50);
 
             newWorld.AddLocation(-1, -1, "Farmer's House",
                 "This is the house of your neighbor, Farmer Ted.",
                 "Farmhouse.png");
             newWorld.LocationAt(-1, -1).TraderHere =
                 TraderFactory.GetTraderByName("Farmer Ted");
+            newWorld.LocationAt(-1, -1).AddMonster(4, 10);
 
             newWorld.AddLocation(0, -1, "Home",
                 "This is your home",

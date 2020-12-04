@@ -16,12 +16,15 @@ namespace Engine.Factories
 
             _standardGameItems.Add (new Weapon(1001, "Pointy Stick", 1, 1, 2));
             _standardGameItems.Add (new Weapon(1002, "Rusty Sword", 5, 1, 3));
+            _standardGameItems.Add(new Weapon(1003, "Iron Sword", 50, 2, 5));
+            _standardGameItems.Add(new Weapon(1004, "Gamblers Sword", 150, 0, 30));
             _standardGameItems.Add (new GameItem(9001, "Snake fang", 1));
             _standardGameItems.Add (new GameItem(9002, "Snakeskin", 2));
             _standardGameItems.Add (new GameItem(9003, "Rat tail", 1));
             _standardGameItems.Add (new GameItem(9004, "Rat fur", 2));
             _standardGameItems.Add (new GameItem(9005, "Spider fang", 1));
             _standardGameItems.Add (new GameItem(9006, "Spider silk", 2));
+            _standardGameItems.Add(new GameItem(9007, "Demon Heart", 100));
         }
     
 

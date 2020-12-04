@@ -11,7 +11,7 @@ namespace Engine.Factories
             {
                 case 1:
                     Monster snake =
-                        new Monster("Snake", "Snake.png", 2, 2, 1, 2, 2, 1);
+                        new Monster("Snake", "Snake.png", 2, 2, 0, 2, 2, 1);
 
                     AddLootItem(snake, 9001, 60);
                     AddLootItem(snake, 9002, 40);
@@ -20,7 +20,7 @@ namespace Engine.Factories
 
                 case 2:
                     Monster rat =
-                        new Monster("Rat", "Rat.png", 5, 3, 1, 2, 3, 5);
+                        new Monster("Rat", "Rat.png", 5, 3, 0, 2, 3, 5);
 
                     AddLootItem(rat, 9003, 25);
                     AddLootItem(rat, 9004, 75);
@@ -29,12 +29,19 @@ namespace Engine.Factories
 
                 case 3:
                     Monster giantSpider =
-                        new Monster("Giant Spider", "GiantSpider.png", 10,5, 1, 4, 10, 10);
+                        new Monster("Giant Spider", "GiantSpider.png", 10,5, 0, 4, 10, 10);
 
                     AddLootItem(giantSpider, 9005, 25);
                     AddLootItem(giantSpider, 9006, 75);
 
                     return giantSpider;
+
+                case 4:
+                    Monster Demon =
+                        new Monster("Demon Dragon", "demon.png", 100, 30, 0, 15, 100, 150);
+                    AddLootItem(Demon, 9007, 20);
+
+                    return Demon;
 
                 default:
                     throw new ArgumentException(string.Format("MonsterType '{0}' does not exist", monsterID));
